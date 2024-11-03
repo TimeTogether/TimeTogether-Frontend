@@ -1,14 +1,20 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.css"; //기본 제공
+import {Routes, Route} from "react-router-dom"; // Routes와 Route import
+//페이지 import
+import Group from './pages/Group.jsx'
+import NavigationBar from "./components/NavigationBar.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-
-    </>
-  )
+      <>
+        <div className="app-container">
+          <Routes>
+            <Route path="/group" element={<Group/>} />
+          </Routes>
+        </div>
+          <NavigationBar/>
+      </>
+  );
 }
 
-export default App
+export default App;
