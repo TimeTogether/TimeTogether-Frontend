@@ -21,10 +21,12 @@
     flex: 1;
     text-align: center;
     padding: 8px 0;
+    color: #1a1a1a;
 }
 
 .day-date {
     font-size: 14px;
+    color: #1a1a1a;
 }
 
 .day-label {

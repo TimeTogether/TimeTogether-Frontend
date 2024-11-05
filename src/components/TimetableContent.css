@@ -1,15 +1,19 @@
 
 .timetable-content {
     width: 100%;
+    max-width: 100%;
+    height: 100%;
     flex-grow: 1;
     /*flex: 1;*/
     /*overflow: auto;*/
     overflow-y: auto;
+    /*overflow-y: hidden;*/
     padding-bottom: 80px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 16px;
     /*padding-bottom: 16px;*/
+    scrollbar-width: none;
 }
 
 .timetable-content::-webkit-scrollbar {
@@ -22,11 +26,14 @@
     /*margin-bottom: 24px;*/
     padding: 0;
     width: 100%;
+    /*height: 200px;*/
+    /*height: 50vh;*/
 }
 
 .group-timetable-header{
     /*width: 100%;*/
     /*margin: 0;*/
+    color: #1a1a1a;
 }
 
 .on-offline{
@@ -42,6 +49,7 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 8px;
+    color: #1a1a1a;
 }
 
 .section-description {
@@ -82,6 +90,13 @@
     /*margin-top: 8px;*/
     padding-top: 20px;
     height: 50px;
+}
+
+.personal-timetable{
+    /*margin-top: 8px;*/
+    padding-top: 20px;
+    /*height: 200px;*/
+    /*height: 50vh;*/
 }
 
 .add-personal-timeBtn{
