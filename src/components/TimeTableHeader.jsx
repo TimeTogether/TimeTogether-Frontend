@@ -1,3 +1,5 @@
+import './TimeTableHeader.css'
+
 const TimetableHeader = () => {
     return (
         <div className="header">

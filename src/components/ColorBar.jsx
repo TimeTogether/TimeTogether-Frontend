@@ -1,13 +1,13 @@
 import {useState} from "react";
 
-function ColorBar(props) {
+function ColorBar({memberCount}) {
     const startColor = "#e0e0e0";
     const endColor = "#4e00c9";
     const divs = [];
     const [round] = useState(8);
 
-    for (let i = 0; i < props.memberCount; i++) {
-        const ratio = i / (props.memberCount - 1);
+    for (let i = 0; i < memberCount; i++) {
+        const ratio = i / (memberCount - 1);
         const color = interpolateColor(startColor, endColor, ratio);
         let roundLeft = 0;
         let roundRight = 0;
@@ -16,7 +16,7 @@ function ColorBar(props) {
             roundLeft = round;
             roundRight = 0;
         }
-        if(i === props.memberCount - 1) {
+        if(i === memberCount - 1) {
             roundLeft = 0;
             roundRight = round;
         }
@@ -25,7 +25,7 @@ function ColorBar(props) {
                 key={i}
                 style={{
                     backgroundColor: color,
-                    width: `${100 / props.memberCount}%`,
+                    width: `${100 / memberCount}%`,
                     height: "100%",
                     display: "inline-block",
                     borderTopRightRadius: `${roundRight}px`,

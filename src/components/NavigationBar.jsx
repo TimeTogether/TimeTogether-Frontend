@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./NavigationBar.css"; // 스타일 파일 import
 import group from "../img/icon/group.png"; //이미지 파일
